@@ -1,0 +1,27 @@
+{
+  "name": "ngx-freshdesk-webwidget",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlisonVilela/ngx-freshdesk-webwidget.git"
+  },
+  "author": {
+    "name": "Alison Vilela",
+    "email": "alison.vilela@live.nl"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlisonVilela/ngx-freshdesk-webwidget/issues"
+  },
+  "main": "ngx-freshdesk-webwidget.umd.js",
+  "module": "ngx-freshdesk-webwidget.js",
+  "jsnext:main": "ngx-freshdesk-webwidget.js",
+  "typings": "ngx-freshdesk-webwidget.d.ts",
+  "peerDependencies": {
+    "@angular/core": "8.2.14",
+    "zone.js": "0.10.2"
+  }
+}
