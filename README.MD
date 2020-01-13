@@ -79,9 +79,7 @@ export class FreshdeskConfig extends NgxFreshdeskWebwidgetConfig {
 export class AppModule { }
 ```
 
-#### 2. Init the `NgxFreshdeskWebwidgetService`
-
-##### For your application
+#### 2. Import the `NgxFreshdeskWebwidgetService`
 
 ```ts
 import { NgxFreshdeskWebwidgetService } from 'ngx-freshdesk-webwidget';
