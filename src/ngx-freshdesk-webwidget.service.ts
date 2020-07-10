@@ -9,15 +9,11 @@ function getWindow(): any {
 @Injectable()
 export class NgxFreshdeskWebwidgetService {
 
-  private window: any;
-
   constructor(private ngxFreshdeskWebwidgetConfig?: NgxFreshdeskWebwidgetConfig) {
     if (!this.ngxFreshdeskWebwidgetConfig.widgetId) {
       throw new Error('Missing widgetId. Please set in app config via FreshdeskWidgetProvider');
     }
-
-    this.window = getWindow();
-    const window = this.window;
+    const window = getWindow();
 
     const script = document.createElement('script');
 
@@ -26,7 +22,8 @@ export class NgxFreshdeskWebwidgetService {
     script.src = `https://widget.freshworks.com/widgets/${this.ngxFreshdeskWebwidgetConfig.widgetId}.js`;
 
     window.fwSettings = {
-      'widget_id': ngxFreshdeskWebwidgetConfig.widgetId
+      'widget_id': ngxFreshdeskWebwidgetConfig.widgetId,
+      'locale': ngxFreshdeskWebwidgetConfig.locale
     };
 
     window.FreshworksWidget || function() {
@@ -54,6 +51,7 @@ export class NgxFreshdeskWebwidgetService {
   }
 
   get FreshworksWidget() {
-    return this.window.FreshworksWidget
+    const window = getWindow();
+    return window.FreshworksWidget;
   }
 }
