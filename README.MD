@@ -63,6 +63,7 @@ import { AppComponent } from './app';
 
 export class FreshdeskConfig extends NgxFreshdeskWebwidgetConfig {
   widgetId = 00000000000;
+  locale = 'en';
   callback(FreshworksWidget) {
     FreshworksWidget('hide');
   }
@@ -137,6 +138,7 @@ buttonClickArticle(articleId: number){
 #### NgxFreshdeskWebwidgetConfig
 
 - `widgetId`: Number of your Freshdesk Web Widget ID.
+- `locale`: To force the widget to load in a particular language.
 - `callback`: Callback, executed after Freshdesk loaded.
 
 ## Issues
@@ -148,6 +150,10 @@ Please report bugs and issues [here](https://github.com/AlisonVilela/ngx-freshde
 MIT © [Alison Vilela](https://github.com/AlisonVilela)
 
 ## Change log
+
+### v1.1.0
+
+- Anuglar 10 support
 
 ### v1.0.0
 

@@ -1,15 +1,10 @@
 import { NgModule, ModuleWithProviders, Type } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { NgxFreshdeskWebwidgetConfig } from './ngx-freshdesk-webwidget.model';
 import { NgxFreshdeskWebwidgetService } from './ngx-freshdesk-webwidget.service';
 
-@NgModule({
-  imports: [
-    CommonModule
-  ]
-})
+@NgModule()
 export class NgxFreshdeskWebwidgetModule {
-  static forRoot(freshdeskConfig: Type<NgxFreshdeskWebwidgetConfig>): ModuleWithProviders {
+  static forRoot(freshdeskConfig: Type<NgxFreshdeskWebwidgetConfig>): ModuleWithProviders<NgxFreshdeskWebwidgetModule> {
     return {
       ngModule: NgxFreshdeskWebwidgetModule,
       providers: [
