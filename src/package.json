@@ -21,7 +21,7 @@
   "jsnext:main": "ngx-freshdesk-webwidget.js",
   "typings": "ngx-freshdesk-webwidget.d.ts",
   "peerDependencies": {
-    "@angular/core": "10.0.2",
+    "@angular/core": "11.2.14",
     "zone.js": "0.10.3"
   }
 }
