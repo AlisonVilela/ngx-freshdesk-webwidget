@@ -34,7 +34,7 @@
     "@angular/common": "10.0.2",
     "@angular/compiler": "10.0.2",
     "@angular/compiler-cli": "10.0.2",
-    "@angular/core": "10.0.2",
+    "@angular/core": "10.2.5",
     "@angular/platform-browser": "10.0.2",
     "@angular/platform-browser-dynamic": "10.0.2",
     "@compodoc/compodoc": "1.1.11",
